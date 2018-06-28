@@ -1,8 +1,11 @@
 #include <jni.h>
 #include <string>
 
+// 日志相关
 #include <android/log.h>
+// 定义打印日志使用的TAG
 #define TAG "NativeLog"
+// 定义日志打印方法，对应不同级别
 #define LOGV(...) __android_log_print(ANDROID_LOG_VERBOSE, TAG, __VA_ARGS__)
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG, TAG, __VA_ARGS__)
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, TAG, __VA_ARGS__)
