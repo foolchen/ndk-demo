@@ -10,6 +10,9 @@ LOCAL_MODULE    := ndk-demo
 # 此处使用../cpp/*.cpp来指定
 LOCAL_SRC_FILES := ../cpp/*.cpp
 
+# 用于打印日志
+LOCAL_LDLIBS    += -llog
+
 # 指定要编译生成的库的类型
 # 如果要生成动态链接库（so文件），则类型为BUILD_SHARED_LIBRARY
 # 如果要生成静态链接库（a文件），则类型为BUILD_STATIC_LIBRARY
